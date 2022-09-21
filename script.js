@@ -1,12 +1,13 @@
 'use strict';
+console.log('Задание 1:')
 const rainbow = 'padding: 0 20px; color: rainbow'
 const productName = prompt ('Введите наименование товара', ['Samsung S20-FE']);
-let productCount = prompt ('Введите количество товара', [2]);
+const productCount = prompt ('Введите количество товара', [2]);
 
 
 if (Number.isFinite(+productCount) === true) {console.log('productCount is number')
   const productCategory = prompt ('Введите категорию товара', ['Смартфоны']);
-  let productPrice = prompt ('Введите стоимость товара', [45000]);
+  const productPrice = prompt ('Введите стоимость товара', [45000]);
 
   if (Number.isFinite(+productPrice) === true) {console.log('productPrice is number')
     const totalPrice = productPrice * productCount;
